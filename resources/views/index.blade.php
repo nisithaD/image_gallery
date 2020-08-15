@@ -30,7 +30,7 @@
 </a>
 </div>
 <style>
-ul {
+#indexul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -38,11 +38,11 @@ ul {
   background-color: #333333;
 }
 
-li {
+#indexli {
   float: left;
 }
 
-li a {
+#indexli a {
   display: block;
   color: white;
   text-align: center;
@@ -51,7 +51,7 @@ li a {
   font-size: 16px;
 }
 
-li a:hover {
+#indexli a:hover {
   background-color: #111111;
   text-decoration: none;
   transition: 0.5s;
@@ -59,11 +59,11 @@ li a:hover {
 }
 </style>
 
-<ul>
-  <li><a href="#home">Facebook</a></li>
-  <li><a href="#news">Instagram</a></li>
-  <li><a href="#contact">Blah blah</a></li>
-  <li><a href="#about">Blah</a></li>
+<ul id="indexul">
+  <li id="indexli"><a href="#home">Facebook</a></li>
+  <li id="indexli"><a href="#news">Instagram</a></li>
+  <li id="indexli"><a href="#contact">Blah blah</a></li>
+  <li id="indexli"><a href="#about">Blah</a></li>
 </ul>
 
 <div class="grid-portfolio" id="portfolio">
