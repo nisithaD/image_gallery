@@ -24,3 +24,13 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' =>['auth','admin']],function(){
+  Route::get('/dashboard', function () {
+      return view('adminpanel.dashboard');
+  });
+});
